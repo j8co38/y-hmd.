@@ -1,0 +1,76 @@
+- var title = "まる・さんかく・しかくまもと | works | y-hmd. | WEBクリエイターを目指すハマダユイコのポートフォリオサイト"
+- var description = "ハマダユイコのポートフォリオサイト | 名古屋でWEBデザインなどについて勉強中の大学生のポートフォリオです。WEBだけに限らずその他の制作物も載せていくつもりです。「まる・さんかく・しかくまもと」の紹介ページです"
+
+doctype html
+html(lang="ja")
+	include ./templates/_head.jade
+	body
+		#js-loaderbg
+			#js-loader
+				img(src="./images/loading.gif" alt="")
+		#wrap
+			#bg
+			nav
+				ul
+					li: a(href="index.html") HOME
+					li: a(href="works.html") works
+					li: a(href="index.html#about") about
+					li: a(href="#contact") contact
+			#container
+				header
+					span.menu-trigger(href="#")
+						span
+						span
+						span
+				#mainVisual
+					#js-fadeText
+						span YUIKO HAMADA's
+						span portfolio site
+				#contents
+					#works
+						h2 works
+						.works-single
+							h3 まる・さんかく・しかくまもと
+							span.date GRAPHIC / 2014.9 ( 2015.3 発売 )
+							.top-img
+								img(src="./images/thumb/02.png" alt="まる・さんかく・しかくまもと")
+							.single-top.clearfix
+								.summary
+									dl
+										dt 制作期間
+										dd 2014.7-2014.9
+										dt 担当範囲
+										dd すべて
+										dt 使用ソフト・技術
+										dd IllustratorCS6 / FireAlpaca
+										dt URL
+										dd: a(href="http://line.me/S/sticker/1041727" target="_blank") http://line.me/S/sticker/1041727
+								.context
+									h4 制作背景
+									p テーマを地元の熊本県にしたLINEスタンプを制作・販売。方言スタンプにすることで市場を絞りました。当時販売されていた熊本弁スタンプが、日常あまり使わない方言のものが多かったため、実際に自分が使う方言を盛り込んだものを制作しました。
+							.flow
+								.flow-detail.clearfix
+									.left.w300
+										img(src="./images/works/02-02.png" alt="まる・さんかく・しかくまもと")
+									.right.w450
+										p 構想を練り始めたのは2014年7月頃。LINEスタンプ市場がぐんぐん伸びていた時期です。そこから2ヶ月くらい案出しをしたり、ラフを描いたりして9月末に一気に仕上げました。
+										p モチーフを図形にしたのは、動物モチーフだとすぐに埋もれてしまうし、熊本に関するものだとありきたりだし、何かもっとよく分からない生き物っぽいのにしよう。と思い、まる・さんかく・しかくのキャラを描いてみました。（知人に何種類かキャラがあった方が良いと言われたのもあって、統一感があり、かつバリエーションがつけれる何かないかなと思い、図形のまる・さんかく・しかくを選びました。）
+								.flow-detail.clearfix
+									.right.w300
+										img(src="./images/works/02-01.png" alt="LINESTORE")
+									.left.w450
+										p こだわったのは、とにかく使える方言にすること。地元の人でもわからないような方言は、スタンプとしては使いにくいと考えたからです。
+										p 販売開始してからは、地元の人はもちろんそうじゃない人にも使って頂けてとても嬉しかったです。
+										p ちなみに一番ローカルネタで気に入ってるのは、お誕生日おめでとう！(スナップ〜)です。
+										p: a(href="http://y-hmd.com/blog/linestamp" target="_blank") LINEスタンプ発売時の記事はこちら
+										p: a(href="http://y-hmd.com/blog/linestamp-report01" target="_blank") LINEスタンプの売上・経過報告の記事はこちら
+								p.ss: img(src="./images/works/02-03.png" alt="全スタンプ")
+							.works-nav.clearfix
+								<a class="anm-btn" href="01.html"><svg><rect x="0" y="0" fill="none" width="150" height="50" class="rect"></svg><span>←</span></a>
+								<a class="btn_big" href="works.html"><svg><rect x="0" y="0" fill="none" width="240" height="50" class="rect"></svg><span>View ALL</span></a>
+								<a class="anm-btn" href="03.html"><svg><rect x="0" y="0" fill="none" width="150" height="50" class="rect"></svg><span>→</span></a>
+					#contact
+						h2 contact
+						p お気軽に お問い合わせください
+						<a class="btn_big" href="mailto:info@y-hmd.com"><svg><rect x="0" y="0" fill="none" width="240" height="50" class="rect"></svg><span>info@y-hmd.com</span></a>
+				include ./templates/_footer.jade

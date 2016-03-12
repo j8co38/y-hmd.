@@ -1,0 +1,68 @@
+- var title = "Y-HMD. | works | y-hmd. | WEBクリエイターを目指すハマダユイコのポートフォリオサイト"
+- var description = "ハマダユイコのポートフォリオサイト | 名古屋でWEBデザインなどについて勉強中の大学生のポートフォリオです。WEBだけに限らずその他の制作物も載せていくつもりです。「Y-HMD.」の紹介ページです。"
+
+doctype html
+html(lang="ja")
+	include ./templates/_head.jade
+	body
+		#js-loaderbg
+			#js-loader
+				img(src="./images/loading.gif" alt="")
+		#wrap
+			#bg
+			nav
+				ul
+					li: a(href="index.html") HOME
+					li: a(href="works.html") works
+					li: a(href="index.html#about") about
+					li: a(href="#contact") contact
+			#container
+				header
+					span.menu-trigger(href="#")
+						span
+						span
+						span
+				#mainVisual
+					#js-fadeText
+						span YUIKO HAMADA's
+						span portfolio site
+				#contents
+					#works
+						h2 works
+						.works-single
+							h3 Y-HMD.
+							span.date WEB / 2015.10- ( 2016.3 renewal )
+							.top-img
+								img(src="./images/works/06.png" alt="Y-HMD.")
+							.single-top.clearfix
+								.summary
+									dl
+										dt 制作期間
+										dd 2015.9-2015.10
+										dt 担当範囲
+										dd すべて
+										dt 使用ソフト・技術
+										dd IllustratorCS6 / HTML5 / CSS3 / jQuery / PHP
+										dt URL
+										dd: a(href="http://y-hmd.com/first" target="_blank") http://y-hmd.com/first
+								.context
+									h4 制作背景
+									p このサイトを公開するまでの間、COMING SOONのページを表示していました。当時覚えたてのSVGアニメーションや、CSS3で動きのあるページを作りました。それから、3年生の秋頃に自分の作品をまとめたポートフォリオサイトを完成させました。TOPページで作品がすぐに目に入るような構成で、シンプルなレスポンシブデザインとなっています。
+							.flow
+								.flow-detail.clearfix
+									.left.w300
+										img(src="./images/works/06-01.png" alt="コンタクトフォーム")
+									.right.w450
+										p 自分の好きを詰め込みました。シンプルで可愛らしいデザイン。<br>当時のブログと似たデザインで、大好きなパンダをイメージした白黒+緑をテーマカラーに選びました。
+										p また初めてコンタクトフォームを実装し、とても悪戦苦闘しました。ただこちらから問い合わせが来ることはほとんどなく、リニューアル後は消えてしまった点です..
+										p こちらのポートフォリオは<a href="https://www.vivivit.com/career_expo_kyoto_2017" target="_blank">ViViVitキャリア展</a>で添削していただいたものです。制作物のカテゴリ分けがない、似たようなものが多いというご指摘を頂いたので、現サイトにはその反省を生かしました。
+										p: a(href="http://y-hmd.com/blog/portfolio-open" target="_blank") WEBサイト公開時の記事はこちら
+							.works-nav.clearfix
+								<a class="anm-btn" href="05.html"><svg><rect x="0" y="0" fill="none" width="150" height="50" class="rect"></svg><span>←</span></a>
+								<a class="btn_big" href="works.html"><svg><rect x="0" y="0" fill="none" width="240" height="50" class="rect"></svg><span>View ALL</span></a>
+								<a class="anm-btn" href="07.html"><svg><rect x="0" y="0" fill="none" width="150" height="50" class="rect"></svg><span>→</span></a>
+					#contact
+						h2 contact
+						p お気軽に お問い合わせください
+						<a class="btn_big" href="mailto:info@y-hmd.com"><svg><rect x="0" y="0" fill="none" width="240" height="50" class="rect"></svg><span>info@y-hmd.com</span></a>
+				include ./templates/_footer.jade

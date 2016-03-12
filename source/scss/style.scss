@@ -1,0 +1,22 @@
+@charset 'UTF-8';
+@import './_lib';
+@import './_common';
+@import './_works';
+@import './_animate';
+@import './_workspage';
+
+@font-face {
+  font-family: "NotoSansCJKjp";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Noto Sans CJK JP Regular"),
+       url("../fonts/notosans-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "NotoSansCJKjp";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Noto Sans CJK JP Bold"),
+       url("../fonts/notosans-bold.woff") format("woff");
+}
