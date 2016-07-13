@@ -1,0 +1,51 @@
+- var title = "works | y-hmd. | WEBクリエイターを目指すハマダユイコのポートフォリオサイト"
+- var description = "ハマダユイコのポートフォリオサイト | 名古屋でWEBデザインなどについて勉強中の大学生です。WEBだけに限らずその他の制作物も載せていくつもりです。制作物の紹介ページです。"
+
+doctype html
+html(lang="ja")
+	include ./templates/_head.jade
+	body
+		#js-loaderbg
+			#js-loader
+				img(src="./images/loading.gif" alt="")
+		#wrap
+			#bg
+			nav
+				ul
+					li: a(href="index.html") HOME
+					li: a(href="works.html") works
+					li: a(href="index.html#about") about
+					li: a(href="#contact") contact
+			#container
+				header
+					span.menu-trigger(href="#")
+						span
+						span
+						span
+				#mainVisual
+					#js-fadeText
+						span YUIKO HAMADA's
+						span portfolio site
+				section#contents
+					section#works
+						h2 works
+						#workspage-list
+							#filters.button-group
+								a(href="#" data-filter="*" class="current button") ALL
+								a(href="#" data-filter=".web" class="button") WEB
+								a(href="#" data-filter=".graphic" class="button") GRAPHIC
+								a(href="#" data-filter=".other" class="button") OTHER
+							ul.filter-contents.clearfix
+								li.web: <a href="08.html"><span class="viewmore">+</span><figure><img src="./images/thumb/08.png" alt=""></figure><div class="caption"><figcaption>LOL.blog</figcaption><p>WordPressでブログ制作</p></div></a>
+								li.web: <a href="07.html"><span class="viewmore">+</span><figure><img src="./images/thumb/07.png" alt=""></figure><div class="caption"><figcaption>GEIKOSAI2015</figcaption><p>大学祭のWEB班でWEBサイトや展示物を制作</p></div></a>
+								li.web: <a href="06.html"><span class="viewmore">+</span><figure><img src="./images/thumb/06.png" alt=""></figure><div class="caption"><figcaption>Y-HMD.</figcaption><p>初代ポートフォリオサイト</p></div></a>
+								li.graphic: <a href="05.html"><span class="viewmore">+</span><figure><img src="./images/thumb/05.png" alt=""></figure><div class="caption"><figcaption>瑞桜会シンボルマークデザイン</figcaption><p>大学の他学部のシンボルマーク公募に応募した作品</p></div></a>
+								li.web: <a href="04.html"><span class="viewmore">+</span><figure><img src="./images/thumb/04.png" alt=""></figure><div class="caption"><figcaption>GEIKOSAI2015(仮)</figcaption><p>大学祭の告知WEBサイトを制作</p></div></a>
+								li.web: <a href="03.html"><span class="viewmore">+</span><figure><img src="./images/thumb/03.png" alt=""></figure><div class="caption"><figcaption>日本の伝統文様100選</figcaption><p>課題で制作した、"分類"をするWEBサイト</p></div></a>
+								li.graphic: <a href="02.html"><span class="viewmore">+</span><figure><img src="./images/thumb/02.png" alt=""></figure><div class="caption"><figcaption>まる・さんかく・しかくまもと</figcaption><p>LINEスタンプを制作・販売</p></div></a>
+								li.other: <a href="01.html"><span class="viewmore">+</span><figure><img src="./images/thumb/01.png" alt=""></figure><div class="caption"><figcaption>UNITED</figcaption><p>自己ブランディングを目的とした学生団体に参加中</p></div></a>
+					#contact
+						h2 contact
+						p お気軽に お問い合わせください
+						<a class="btn_big" href="#"><svg><rect x="0" y="0" fill="none" width="240" height="50" class="rect"></svg><span>info@y-hmd.com</span></a>
+				include ./templates/_footer.jade
