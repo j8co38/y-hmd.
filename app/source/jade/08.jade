@@ -1,0 +1,79 @@
+- var title = "LOL.blog | works | y-hmd. | WEBクリエイターを目指すハマダユイコのポートフォリオサイト"
+- var description = "ハマダユイコのポートフォリオサイト | 名古屋でWEBデザインなどについて勉強中の大学生のポートフォリオです。WEBだけに限らずその他の制作物も載せていくつもりです。「LOL.blog」の紹介ページです"
+
+doctype html
+html(lang="ja")
+	include ./templates/_head.jade
+	body
+		#js-loaderbg
+			#js-loader
+				img(src="./images/loading.gif" alt="")
+		#wrap
+			#bg
+			nav
+				ul
+					li: a(href="index.html") HOME
+					li: a(href="works.html") works
+					li: a(href="index.html#about") about
+					li: a(href="#contact") contact
+			#container
+				header
+					span.menu-trigger(href="#")
+						span
+						span
+						span
+				#mainVisual
+					#js-fadeText
+						span YUIKO HAMADA's
+						span portfolio site
+				section#contents
+					section#works
+						h2 works
+						.works-single
+							h3 LOL.blog
+							span.date WEB / 2015.3- ( 2016.1 renewal )
+							.top-img
+								img(src="./images/works/08.png" alt="LOL.blog")
+							.single-top.clearfix
+								.summary
+									dl
+										dt 制作期間
+										dd 2015.12-2016.1
+										dt 担当範囲
+										dd すべて
+										dt 使用ソフト・技術
+										dd IllustratorCS6 / PhotoshopCS6 / HTML5 / CSS3(scss) / jQuery / WordPress
+										dt URL
+										dd: a(href="http://y-hmd.com/blog" target="_blank") http://y-hmd.com/blog
+								.context
+									h4 制作背景
+									p もともとはWebサイトのトレースをした後のメモ代わりに始めたブログですが、今は自分が学んだことやつまずいたこと、制作物の紹介などいろいろな記事を書いています。ここで紹介しているのは、自作したうちの2つ目のテーマです。今回は勉強を兼ねて、sass+gulp+MAMPで開発しました。
+							section.flow
+								.flow-detail.clearfix
+									.left.w300
+										img(src="./images/works/08-01.jpg" alt="アイディア出し")
+									.right.w450
+										p テーマを作り直すにあたって、追加する機能などを書き出しました。<br>いろいろなブログを見て回り、気づいたのは記事にたどり着くことが多いということ。記事がシェアされたり、検索で引っかかったりすることが多い為、他の記事への導線をしっかり配置しておくべきだと思い、今回”関連する記事の表示/人気記事の表示”を取り入れました。
+								.flow-detail.clearfix
+									.right.w300
+										img(src="./images/works/08-02.jpg" alt="手書きワイヤーフレーム")
+									.left.w450
+										p それから、ブログのTOPへたどり着いた時にどんな記事を書いているのかわかりやすいように、記事をタイル状に配置しました。ここで、アイキャッチ画像の重要さを再確認しました。ただの画像ではなく、目を引くものでなければ意味がないので、毎回制作するようになりました。
+										p スマホから見る方も多いので、モバイル対応もしています。今回もレスポンシブデザインになっています。PCでも幅を縮めるとご覧いただけます。
+										p 今後の目標はとにかくPV数を増やすことと、記事の更新頻度を上げること。
+								.flow-detail.clearfix
+									.left.w300
+										img(src="./images/works/08-03.png" alt="最初のテーマ")
+									.right.w450
+										p ちなみに最初のテーマは白黒+緑でパンダをイメージしたデザインでした。
+										p: a(href="http://y-hmd.com/blog/wp-theme" target="_blank") 最初のテーマについてはこちら
+								p.ss: img(src="./images/works/08-04.png" alt="スクリーンショット")
+							.works-nav.clearfix
+								<a class="anm-btn" href="07.html"><svg><rect x="0" y="0" fill="none" width="150" height="50" class="rect"></svg><span>←</span></a>
+								<a class="btn_big" href="works.html"><svg><rect x="0" y="0" fill="none" width="240" height="50" class="rect"></svg><span>View ALL</span></a>
+								<a class="anm-btn" href="#"><svg><rect x="0" y="0" fill="none" width="150" height="50" class="rect"></svg><span>→</span></a>
+					#contact
+						h2 contact
+						p お気軽に お問い合わせください
+						<a class="btn_big" href="mailto:info@y-hmd.com"><svg><rect x="0" y="0" fill="none" width="240" height="50" class="rect"></svg><span>info@y-hmd.com</span></a>
+				include ./templates/_footer.jade
