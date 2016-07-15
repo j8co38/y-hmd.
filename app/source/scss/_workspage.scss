@@ -161,6 +161,12 @@
 			.context {
 				float: left;
 				width: 450px;
+				a {
+					text-decoration: underline;
+					&:hover {
+						color: $red;
+					}
+				}
 				@include media(sp) {
 					width: 100%;
 					h4 {

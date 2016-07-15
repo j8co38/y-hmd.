@@ -1,0 +1,78 @@
+- var title = "卓展2016 | works | y-hmd. | WEBクリエイターを目指すハマダユイコのポートフォリオサイト"
+- var description = "ハマダユイコのポートフォリオサイト | 名古屋でWEBデザインなどについて勉強中の大学生のポートフォリオです。WEBだけに限らずその他の制作物も載せていくつもりです。「卓展2016」の紹介ページです"
+
+doctype html
+html(lang="ja")
+	include ./templates/_head.jade
+	body
+		#js-loaderbg
+			#js-loader
+				img(src="./images/loading.gif" alt="")
+		#wrap
+			#bg
+			nav
+				ul
+					li: a(href="index.html") HOME
+					li: a(href="works.html") works
+					li: a(href="index.html#about") about
+					li: a(href="#contact") contact
+			#container
+				header
+					span.menu-trigger(href="#")
+						span
+						span
+						span
+				#mainVisual
+					#js-fadeText
+						span YUIKO HAMADA's
+						span portfolio site
+				section#contents
+					section#works
+						h2 works
+						.works-single
+							h3 卓展2016
+							span.date WEB / 2016.4-
+							.top-img
+								img(src="./images/works/09.png" alt="卓展2016")
+							.single-top.clearfix
+								.summary
+									dl
+										dt 制作期間
+										dd 2016.5-2016.6
+										dt 担当範囲
+										dd デザイン/一部コーディング
+										dt 使用ソフト・技術
+										dd IllustratorCS6 / PhotoshopCS6 / HTML5(ejs) / CSS3(scss)
+										dt URL
+										dd: a(href="http://taku-ten.com" target="_blank") http://taku-ten.com
+								.context
+									h4 制作背景
+									p デザインを学ぶ学生によるプロジェクトの成果発表・展示会、「卓展」。毎年芸術工学部で開催される卓展ですが、これまでWEB制作はされてなかったようで、今年は広報により力を入れるためにWEBでも広報をすることに。<a href="http://mtmtkzm.com" target="_blank">MTMTKZM.com</a>と何度目かの共同制作です。グラフィック班が素敵なポスターを制作してくれたので、有り難く素材を使わせてもらいました。
+							section.flow
+								.flow-detail.clearfix
+									.left.w300
+										img(src="./images/works/09-01.png" alt="卓展WEB")
+									.right.w450
+										p WEBを作るにあたって、何のために作るのか。というのを考えた結果、(1)卓展がどんな雰囲気で、どんなものであるか (2)会場のマップ が大事だ！となりました。（現在会場マップは準備中）
+										p 卓展がどんな雰囲気が知ってもらうために、各卓の写真を撮ってもらい写真を大きく表示することに。
+										p 左の写真は、私が開いたGLYPHという卓の紹介ページ。
+								.flow-detail.clearfix
+									.right.w300
+										img(src="./images/works/09-02.gif" alt="アニメーション")
+									.left.w450
+										p イベントページなので、そこそこにインパクトも欲しくTOPはアニメーションをつけてもらいました。ぽよんっと出る丸が可愛いです。くるくる回る円は、なかなかいろんなブラウザで表示させるのが難しく最終的にjsでどうにかなったようで安心しました。
+										p それからブームは過ぎましたが、パララックスも取り入れました。背景画像は3枚使い、層になって見えるようにしています。
+								.flow-detail.clearfix
+									.left.w300
+										img(src="./images/works/09-03.png" alt="スマホメニュー")
+									.right.w450
+										p スマホメニューは、モチーフの円を使ったアイコンにしました。
+							.works-nav.clearfix
+								<a class="anm-btn" href="08.html"><svg><rect x="0" y="0" fill="none" width="150" height="50" class="rect"></svg><span>←</span></a>
+								<a class="btn_big" href="works.html"><svg><rect x="0" y="0" fill="none" width="240" height="50" class="rect"></svg><span>View ALL</span></a>
+								<a class="anm-btn" href="#"><svg><rect x="0" y="0" fill="none" width="150" height="50" class="rect"></svg><span>→</span></a>
+					#contact
+						h2 contact
+						p お気軽に お問い合わせください
+						<a class="btn_big" href="mailto:info@y-hmd.com"><svg><rect x="0" y="0" fill="none" width="240" height="50" class="rect"></svg><span>info@y-hmd.com</span></a>
+				include ./templates/_footer.jade

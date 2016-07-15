@@ -147,4 +147,22 @@
 	.anm-btn {
 		margin: 40px auto 0 auto;
 	}
+	.new {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 0;
+		border: 24px solid transparent;
+		border-top: 24px solid $red;
+		border-left: 24px solid $red;
+		span {
+			display: block;
+			color: #fff;
+			letter-spacing: 0.1em;
+			transform: rotate(-45deg) translateX(-8px) translateY(-18px);
+					-ms-transform: rotate(-45deg) translateX(-8px) translateY(-18px);
+					-webkit-transform: rotate(-45deg) translateX(-8px) translateY(-18px);
+		}
+	}
 }
