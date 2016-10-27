@@ -69,7 +69,8 @@ gulp.task('copy', function(){
     gulp.src('./app/source/images/**/*.{png,jpg,gif}').pipe(plumber()).pipe(gulp.dest('./app/public/images')).pipe(browser.reload({stream:true}));
     gulp.src('./app/source/images/**/').pipe(plumber()).pipe(gulp.dest('./app/public/images')).pipe(browser.reload({stream:true}));
     gulp.src('./app/source/jade/**/*.html').pipe(plumber()).pipe(gulp.dest('./app/public/')).pipe(browser.reload({stream:true}));
-    gulp.src('./app/source/fonts/**/*.html').pipe(plumber()).pipe(gulp.dest('./app/public/fonts')).pipe(browser.reload({stream:true}));
+    gulp.src('./app/source/fonts/**/').pipe(plumber()).pipe(gulp.dest('./app/public/fonts')).pipe(browser.reload({stream:true}));
+    gulp.src('./app/source/css/**/').pipe(plumber()).pipe(gulp.dest('./app/public/css')).pipe(browser.reload({stream:true}));
 });
 
 // BUILD
