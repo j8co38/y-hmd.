@@ -142,6 +142,9 @@ header {
 			content: "";
 		}
 	}
+	.txt-red {
+		color: $red;
+	}
 	#about {
 		.left, .right {
 			width: 50%;
